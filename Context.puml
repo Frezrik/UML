@@ -1,0 +1,18 @@
+@startuml
+
+abstract Context
+class ContextWrapper
+class ContextImpl
+class ContextThemeWrapper
+class Service
+class Application
+class Activity
+
+Context <|-- ContextWrapper
+Context <|-- ContextImpl
+ContextWrapper <|-- ContextThemeWrapper
+ContextWrapper <|-- Service
+ContextWrapper <|-- Application
+ContextThemeWrapper <|-- Activity
+
+@enduml
